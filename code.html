@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div class="wrapper">
+     <div class="card-wrapper">
+        <div class="imag">
+            <img src="./assests/DSC_0004.JPG">
+        </div>
+        <div class="username">
+           <h2>BHANU PRATAP</h2>
+        </div>
+        <div class="designation">
+          <h3>SOFTWARE DEVELOPER  </h3>
+        </div>
+        <div class="bottom-group"> 
+            <button class="btn-share btn-card" onclick="openModal()">
+                 <h3>Share my profile</h3>
+            </button>
+            <button class="btn-follow btn-card">
+                  <h3>Follow me </h3>     
+            </button>
+        </div>
+     </div>
+
+    </div>
+
+
+    <!--Modal componenet-->
+
+
+    <div class="modal">
+     <div class="modal-header">
+        <h1>share my profile</h1>
+     
+     <div>
+        <i  onclick="closeModal()" class="fa-solid fa-xmark close"> </i>
+     </div>
+    </div>
+
+    <div>
+        <h3> share this via</h3>
+    <div class="icon_container">
+     <a href="#" class="icon" id="facebook">
+        <i  class="fa-brands fa-facebook-f"></i>
+     </a>
+     <a href="#" class="icon" id="twitter">
+        <i class="fa-brands fa-twitter"></i>
+     </a>
+     <a href="#" class="icon" id="instagram">
+        <i class="fa-brands fa-instagram"></i>
+     </a>
+     <a href="#" class="icon" id="whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+     </a>
+     <a href="#" class="icon" id="telegram">
+        <i class="fa-brands fa-telegram"></i>
+     </a>
+    </div> 
+    </div>
+    </div>
+        <!--overlay-->
+        <div class="overlay"  onclick="closeModal()"></div>
+         <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
+       
+</body>
+</html>
